@@ -2,40 +2,40 @@
 
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/style.css" />
 
-    <title>LOGIN</title>
+    <title>Con Cưng</title>
+</head>
+<body>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
+    
 
-  
-  <body>
-    <section>
-      <div class="signin">
-        <div class="content">
-          <h2>WELCOME</h2>
 
-          <div class="form">
-            <div class="inputBox">
-              <input type="text" required /> <i>Username</i>
-            </div>
+   <div class="container">
+    <h1 class=" header-content">Welcome to Hà Đà Nẵng's Store</h1>
 
-            <div class="inputBox">
-              <input type="password" required /> <i>Password</i>
-            </div>
+    <form action="MainController" method="POST">
+        <select class="select-main" name="cmbName">
+            <option class="option-main " value="P01-Sua Bot-100">Sữa Bột - 100$</option>
+            <option value="P02-Ta-50">Tã - 100$</option>
+            <option value="P03-Thoi Trang-200">Thời Trang - 200$</option>
+            <option value="P04-Sung-300">Súng - 100$</option>
+            <option value="P05-Sua Bo tuoi-10">Sữa Bò tươi - 10$</option>
+        </select>
+        <select class="select-number" name="cmbQuantity">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="50">50</option>
+        </select>
+        <input class="add-btn" type="submit" name="action" value="Add"/>
+        <input class="view-btn" type="submit" name="action" value="View"/>
+    </form> 
+   </div>
 
-            <div class="links">
-              <a href="#">Forgot Password</a> <a href="#">Signup</a>
-            </div>
-
-            <div class="">
-              <!-- <input type="submit" value="Login" /> -->
-              <button class=" bt-login">LOGIN</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
+    </body>
 </html>
